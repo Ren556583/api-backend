@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 查询名称接口
  */
 @RestController
-@RequestMapping("/name")
+@RequestMapping("/")
 public class NameController {
-    @GetMapping("/")
-    public String getName(String name) {
+    @GetMapping("/name")
+    public String getName(String name,HttpServletRequest request) {
         return "get 你的名字是" + name;
     }
 
@@ -46,6 +46,9 @@ public class NameController {
             throw new RuntimeException("无权限");
         }
         // todo 调用次数 + 1 invokeCount
-        return "post 用户是" + user.getUsername();
+        String result =  "post 用户是" + user.getUsername();
+        //调用成功后
+
+        return result;
     }
 }
