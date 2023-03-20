@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 查询名称接口
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/name")
 public class NameController {
-    @GetMapping("/name")
+    @GetMapping("/get")
     public String getName(String name,HttpServletRequest request) {
         return "get 你的名字是" + name;
     }
 
-    @PostMapping("/")
+    @PostMapping("/post")
     public String getNameByPost(@RequestParam String name) {
         return "post 你的名字是" + name;
     }
