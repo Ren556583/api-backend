@@ -2,7 +2,8 @@ package com.ryh.project.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.ryh.apiclientsdk.client.ApiClient;
+import com.ryh.apicommon.model.entity.User;
+import com.ryh.apicommon.model.entity.UserInterfaceInfo;
 import com.ryh.project.annotation.AuthCheck;
 import com.ryh.project.common.*;
 import com.ryh.project.constant.CommonConstant;
@@ -11,8 +12,6 @@ import com.ryh.project.exception.BusinessException;
 import com.ryh.project.model.dto.userinterfaceinfo.UserInterfaceInfoAddRequest;
 import com.ryh.project.model.dto.userinterfaceinfo.UserInterfaceInfoQueryRequest;
 import com.ryh.project.model.dto.userinterfaceinfo.UserInterfaceInfoUpdateRequest;
-import com.ryh.project.model.entity.UserInterfaceInfo;
-import com.ryh.project.model.entity.User;
 import com.ryh.project.service.UserInterfaceInfoService;
 import com.ryh.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;

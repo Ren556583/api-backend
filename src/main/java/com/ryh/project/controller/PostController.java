@@ -2,6 +2,7 @@ package com.ryh.project.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ryh.apicommon.model.entity.User;
 import com.ryh.project.annotation.AuthCheck;
 import com.ryh.project.common.BaseResponse;
 import com.ryh.project.common.DeleteRequest;
@@ -13,7 +14,6 @@ import com.ryh.project.model.dto.post.PostAddRequest;
 import com.ryh.project.model.dto.post.PostQueryRequest;
 import com.ryh.project.model.dto.post.PostUpdateRequest;
 import com.ryh.project.model.entity.Post;
-import com.ryh.project.model.entity.User;
 import com.ryh.project.service.PostService;
 import com.ryh.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;

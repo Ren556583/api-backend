@@ -1,7 +1,9 @@
 package com.ryh.project.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ryh.project.model.entity.UserInterfaceInfo;
+import com.ryh.apicommon.model.entity.UserInterfaceInfo;
+
+import java.util.List;
 
 /**
 * @author ryh
@@ -10,6 +12,8 @@ import com.ryh.project.model.entity.UserInterfaceInfo;
 * @Entity generator.domain.UserInterfaceInfo
 */
 public interface UserInterfaceInfoMapper extends BaseMapper<UserInterfaceInfo> {
+
+    List<UserInterfaceInfo> listTopInvokeInterfaceInfo(int limit);
 
 }
 

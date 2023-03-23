@@ -1,7 +1,7 @@
 package com.ryh.project.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ryh.project.model.entity.InterfaceInfo;
+import com.ryh.apicommon.model.entity.InterfaceInfo;
 
 /**
 * @author ryh

@@ -36,17 +36,19 @@ public class NameController {
         if (Long.parseLong(nonce) > 10000) {
             throw new RuntimeException("无权限");
         }
-        // todo 时间和当前时间不能超过 5 分钟
-        //if (timestamp) {
-        //
-        //}
+        // 时间和当前时间不能超过 5 分钟
+        Long currentTime = System.currentTimeMillis() / 1000;
+        final Long FIVE_MINUTES = 60 * 5L;
+        if ((currentTime - Long.parseLong(timestamp)) >= FIVE_MINUTES) {
+            throw new RuntimeException("无权限");
+        }
         // todo 实际情况中是从数据库中查出 secretKey
         String serverSign = SignUtils.getSign(body, "abcdefg");
         if (!sign.equals(serverSign)) {
             throw new RuntimeException("无权限");
         }
         // todo 调用次数 + 1 invokeCount
-        String result =  "post 用户是" + user.getUsername();
+        String result = "post 用户是" + user.getUsername();
         //调用成功后
 
         return result;

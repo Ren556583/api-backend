@@ -1,11 +1,12 @@
 package com.ryh.project.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ryh.apicommon.model.entity.UserInterfaceInfo;
 import com.ryh.project.common.ErrorCode;
 import com.ryh.project.exception.BusinessException;
 import com.ryh.project.mapper.UserInterfaceInfoMapper;
-import com.ryh.project.model.entity.UserInterfaceInfo;
 import com.ryh.project.service.UserInterfaceInfoService;
 import org.springframework.stereotype.Service;
 

@@ -36,3 +36,7 @@ api:
   client:
     access-key: renyuhang
     secret-key: abcdefg
+# application.yml (Spring Boot
+dubbo:
+  registry:
+    address: nacos://localhost:8848

@@ -1,10 +1,10 @@
 package com.ryh.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ryh.apicommon.model.entity.InterfaceInfo;
 import com.ryh.project.common.ErrorCode;
 import com.ryh.project.exception.BusinessException;
 import com.ryh.project.mapper.InterfaceInfoMapper;
-import com.ryh.project.model.entity.InterfaceInfo;
 import com.ryh.project.service.InterfaceInfoService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
